@@ -32,7 +32,7 @@ def v_subtraction(v1, v2): # функція віднімання двох век
     else:
         return "Віднімання векторів неможливе через різні розмірності."
 
-def scalar_product(v1, v2): # функція обчислення скалярного добутку (скалярного добутку) двох векторів
+def scalar_product(v1, v2): # функція обчислення скалярного добутку двох векторів
     if scalar_product_possibility(v1, v2):
         result = sum([x * y for x, y in zip(v1, v2)])
         return result
@@ -45,11 +45,11 @@ print("Довжина першого вектора:", length_of_v1)
 length_of_v2 = vector_length(v2) # обчислення довжини другого вектора
 print("Довжина другого вектора:", length_of_v2)
 
-result_addition = v_addition(v1, v2) # додавання векторів.
+result_addition = v_addition(v1, v2) # додавання векторів
 print("Додавання векторів:", result_addition)
 
-result_subtraction = v_subtraction(v1, v2) # віднімання векторів.
+result_subtraction = v_subtraction(v1, v2) # віднімання векторів
 print("Віднімання векторів:", result_subtraction)
 
-result_scalar_product = scalar_product(v1, v2) # скалярний добуток двох векторів.
+result_scalar_product = scalar_product(v1, v2) # скалярний добуток двох векторів
 print("Скалярний добуток:", result_scalar_product)
